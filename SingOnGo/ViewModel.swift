@@ -47,14 +47,17 @@ class ViewModel: ObservableObject {
         do {
             try session.setActive(true)
             try session.setPreferredInput(currentInput)
+            try session.setPreferredIOBufferDuration(0.0007)
         } catch {
             print(error.localizedDescription)
         }
         
+        engine = AVAudioEngine()
+        
         engine.attach(player)
         engine.connect(player, to: engine.mainMixerNode, format: engine.inputNode.outputFormat(forBus: 0))
-        engine.inputNode.installTap(onBus: 0, bufferSize: 100, format: engine.inputNode.outputFormat(forBus: 0)) { (buffer, time) -> Void in
-            buffer.frameLength = 100
+        engine.inputNode.installTap(onBus: 0, bufferSize: 256, format: engine.inputNode.outputFormat(forBus: 0)) { (buffer, time) -> Void in
+            buffer.frameLength = 256
             self.player.scheduleBuffer(buffer)
         }
         engine.prepare()
@@ -71,7 +74,7 @@ class ViewModel: ObservableObject {
             print(error.localizedDescription)
         }
         engine.mainMixerNode.outputVolume = volume
-        player.prepare(withFrameCount: 100)
+        player.prepare(withFrameCount: 256)
         player.play()
     }
     
