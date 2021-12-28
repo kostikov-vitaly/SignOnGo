@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D82934C52775F6A8003526F2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82934C42775F6A7003526F2 /* ViewModel.swift */; };
 		D8B0168F2775F3E500056B48 /* SignOnGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B0168E2775F3E500056B48 /* SignOnGoApp.swift */; };
 		D8B016912775F3E500056B48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B016902775F3E500056B48 /* ContentView.swift */; };
 		D8B016932775F3E500056B48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8B016922775F3E500056B48 /* Assets.xcassets */; };
@@ -14,7 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D8B0168B2775F3E500056B48 /* SignOnGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignOnGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D81541912779AEAC0072A101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D82934C42775F6A7003526F2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D8B0168B2775F3E500056B48 /* SingOnGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingOnGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8B0168E2775F3E500056B48 /* SignOnGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOnGoApp.swift; sourceTree = "<group>"; };
 		D8B016902775F3E500056B48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D8B016922775F3E500056B48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,7 +38,7 @@
 		D8B016822775F3E500056B48 = {
 			isa = PBXGroup;
 			children = (
-				D8B0168D2775F3E500056B48 /* SignOnGo */,
+				D8B0168D2775F3E500056B48 /* SingOnGo */,
 				D8B0168C2775F3E500056B48 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +46,22 @@
 		D8B0168C2775F3E500056B48 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8B0168B2775F3E500056B48 /* SignOnGo.app */,
+				D8B0168B2775F3E500056B48 /* SingOnGo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D8B0168D2775F3E500056B48 /* SignOnGo */ = {
+		D8B0168D2775F3E500056B48 /* SingOnGo */ = {
 			isa = PBXGroup;
 			children = (
+				D81541912779AEAC0072A101 /* Info.plist */,
 				D8B0168E2775F3E500056B48 /* SignOnGoApp.swift */,
 				D8B016902775F3E500056B48 /* ContentView.swift */,
+				D82934C42775F6A7003526F2 /* ViewModel.swift */,
 				D8B016922775F3E500056B48 /* Assets.xcassets */,
 				D8B016942775F3E500056B48 /* Preview Content */,
 			);
-			path = SignOnGo;
+			path = SingOnGo;
 			sourceTree = "<group>";
 		};
 		D8B016942775F3E500056B48 /* Preview Content */ = {
@@ -70,9 +75,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D8B0168A2775F3E500056B48 /* SignOnGo */ = {
+		D8B0168A2775F3E500056B48 /* SingOnGo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8B016992775F3E500056B48 /* Build configuration list for PBXNativeTarget "SignOnGo" */;
+			buildConfigurationList = D8B016992775F3E500056B48 /* Build configuration list for PBXNativeTarget "SingOnGo" */;
 			buildPhases = (
 				D8B016872775F3E500056B48 /* Sources */,
 				D8B016882775F3E500056B48 /* Frameworks */,
@@ -82,9 +87,9 @@
 			);
 			dependencies = (
 			);
-			name = SignOnGo;
+			name = SingOnGo;
 			productName = SignOnGo;
-			productReference = D8B0168B2775F3E500056B48 /* SignOnGo.app */;
+			productReference = D8B0168B2775F3E500056B48 /* SingOnGo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -115,7 +120,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D8B0168A2775F3E500056B48 /* SignOnGo */,
+				D8B0168A2775F3E500056B48 /* SingOnGo */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8B016912775F3E500056B48 /* ContentView.swift in Sources */,
+				D82934C52775F6A8003526F2 /* ViewModel.swift in Sources */,
 				D8B0168F2775F3E500056B48 /* SignOnGoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +202,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,7 +257,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -268,10 +274,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SignOnGo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SingOnGo/Preview Content\"";
 				DEVELOPMENT_TEAM = 3GWJJ878N9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SingOnGo/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,8 +290,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kostikov.vitaly.SignOnGo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kostikov.vitaly.SingOnGo;
+				PRODUCT_NAME = SingOnGo;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,10 +305,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SignOnGo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SingOnGo/Preview Content\"";
 				DEVELOPMENT_TEAM = 3GWJJ878N9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SingOnGo/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -311,8 +321,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kostikov.vitaly.SignOnGo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kostikov.vitaly.SingOnGo;
+				PRODUCT_NAME = SingOnGo;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,7 +341,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8B016992775F3E500056B48 /* Build configuration list for PBXNativeTarget "SignOnGo" */ = {
+		D8B016992775F3E500056B48 /* Build configuration list for PBXNativeTarget "SingOnGo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8B0169A2775F3E500056B48 /* Debug */,
